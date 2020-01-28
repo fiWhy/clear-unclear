@@ -1,0 +1,45 @@
+$unclearColor:#fff;
+$clearColor: #fff;
+$backgroundColor: #3575D3;
+
+body {
+  font-family: sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #app {
+  width: 100%;
+  height: 100%;
+}
+
+.cu__wrapper {
+  background-color: $backgroundColor;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  justify-content: center;
+}
+.cu__boxes {
+  display: flex;
+  width: 33%;
+  height: 100%;
+  flex-direction: column;
+
+  &>div{
+    width: 100%;
+  }
+
+  &__clear {
+    background-color: $clearColor;
+    height: 50%;
+    border-top: 1px solid $backgroundColor;
+  }
+
+  &__unclear {
+    background-color: $unclearColor;
+    height: 50%;
+    border-bottom: 1px solid $backgroundColor;
+  }
+}
